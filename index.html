@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FinTrack 個人記帳工具</title>
+<style>
+:root { color-scheme: light dark; --fg: #1f2328; --muted: #59636e; --bg: #ffffff; --line: #d1d9e0; --link: #0969da; }
+@media (prefers-color-scheme: dark) {
+  :root { --fg: #e6edf3; --muted: #9198a1; --bg: #0d1117; --line: #3d444d; --link: #4493f8; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 40px 20px 64px; }
+h1 { font-size: 1.9rem; margin: 0 0 8px; }
+h2 { font-size: 1.15rem; margin: 28px 0 8px; }
+p, li { margin: 6px 0; }
+ul { padding-left: 1.3em; }
+a { color: var(--link); }
+code { font-size: 0.9em; padding: 1px 5px; border: 1px solid var(--line); border-radius: 4px; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 36px 0 8px; }
+.lead { font-size: 1.05rem; }
+.meta { color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <h1>FinTrack</h1>
+  <p class="lead">個人自用的記帳工具，只有開發者本人使用，不對外提供服務或開放註冊。</p>
+
+  <h2>功能</h2>
+  <ul>
+    <li>管理現金、銀行、信用卡與證券戶現金等多個帳戶，記錄收入、支出與轉帳。</li>
+    <li>管理信用卡帳單、分期與借貸，提供收支與資產報表、預算。</li>
+    <li>匯入信用卡帳單，與已記錄的交易逐筆核對。</li>
+  </ul>
+
+  <h2>Gmail 連線的用途</h2>
+  <p>FinTrack 以 Gmail 唯讀權限，每天搜尋本人信箱中指定銀行寄出的信用卡電子帳單與轉帳通知。解析後的帳單與交易先列為待確認，經本人核對後才寫入記帳資料。FinTrack 不寄信、不修改或刪除信件，也不讀取其他信件。</p>
+  <p>Google 使用者資料的處理方式，請見<a href="privacy.html">隱私權政策</a>。</p>
+
+  <hr>
+  <section lang="en">
+    <h2>About FinTrack</h2>
+    <p>FinTrack is a personal finance tracker used only by its developer. It is not offered to the public. With read-only Gmail access, it searches the developer's own mailbox once a day for credit card e-statements and transfer notices from selected banks. Parsed results are held for the developer's review before they are recorded. See the <a href="privacy.html">Privacy Policy</a>.</p>
+  </section>
+</main>
+</body>
+</html>

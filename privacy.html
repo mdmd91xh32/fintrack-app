@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FinTrack 隱私權政策</title>
+<style>
+:root { color-scheme: light dark; --fg: #1f2328; --muted: #59636e; --bg: #ffffff; --line: #d1d9e0; --link: #0969da; }
+@media (prefers-color-scheme: dark) {
+  :root { --fg: #e6edf3; --muted: #9198a1; --bg: #0d1117; --line: #3d444d; --link: #4493f8; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 16px/1.7 -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif; }
+main { max-width: 720px; margin: 0 auto; padding: 40px 20px 64px; }
+h1 { font-size: 1.9rem; margin: 0 0 8px; }
+h2 { font-size: 1.15rem; margin: 28px 0 8px; }
+p, li { margin: 6px 0; }
+ul { padding-left: 1.3em; }
+a { color: var(--link); }
+code { font-size: 0.9em; padding: 1px 5px; border: 1px solid var(--line); border-radius: 4px; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 36px 0 8px; }
+.lead { font-size: 1.05rem; }
+.meta { color: var(--muted); font-size: 0.9rem; }
+</style>
+</head>
+<body>
+<main>
+  <p><a href="index.html">← FinTrack</a></p>
+  <h1>隱私權政策</h1>
+  <p class="meta">更新日期：2026-11-24</p>
+
+  <h2>適用範圍</h2>
+  <p>FinTrack 是個人自用的記帳工具，只有開發者本人使用，不對外提供服務。本政策說明 FinTrack 如何使用經本人授權取得的 Google 使用者資料。</p>
+
+  <h2>存取的資料</h2>
+  <p>FinTrack 只申請 Gmail 唯讀權限（<code>gmail.readonly</code>），用來搜尋本人信箱中指定銀行寄出的信用卡電子帳單與轉帳通知，並讀取這些信件的內容與附件。</p>
+
+  <h2>使用方式</h2>
+  <ul>
+    <li>從上述信件解析帳單金額、交易日期與金額，列為待確認，供本人核對後寫入記帳資料。</li>
+    <li>不寄信，不修改、標記或刪除信件。</li>
+    <li>不把信件內容送到外部 AI 或其他雲端服務，也不用來訓練 AI 模型。</li>
+  </ul>
+
+  <h2>保存</h2>
+  <ul>
+    <li>解析結果只存放在本人自行管理的主機。</li>
+    <li>不保存原始信件與附件；只保存信件識別碼、處理結果與解析出的帳務資料。</li>
+    <li>Google 授權權杖只存放在該主機的私有設定，不會公開或提供給他人。</li>
+  </ul>
+
+  <h2>分享</h2>
+  <p>FinTrack 不出售、出租或分享 Google 使用者資料，不轉交第三方，也不用於廣告。</p>
+  <p>FinTrack 使用與傳輸自 Google API 取得之資訊時，遵守 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 服務使用者資料政策</a>，包括有限使用（Limited Use）規定。</p>
+
+  <h2>撤銷授權</h2>
+  <p>可隨時在 <a href="https://myaccount.google.com/permissions">Google 帳戶的第三方存取權</a>移除 FinTrack。移除後，FinTrack 立即無法讀取信箱。</p>
+
+  <h2>聯絡</h2>
+  <p>如有疑問，請透過 <a href="https://github.com/mdmd91xh32">GitHub</a> 聯絡開發者。</p>
+
+  <hr>
+  <section lang="en">
+    <h2>Privacy Policy (English)</h2>
+    <p>FinTrack is a personal finance tracker used only by its developer and is not offered to the public. It requests only read-only Gmail access (<code>gmail.readonly</code>) to find credit card e-statements and transfer notices from selected banks in the developer's own mailbox.</p>
+    <p>Parsed amounts and dates are stored only on a server the developer manages, for the developer's own review. Original emails and attachments are not stored. Authorization tokens are kept in that server's private configuration. FinTrack never sends, modifies or deletes email, never sends email content to external AI or other cloud services, and never sells, shares or transfers Google user data to third parties or uses it for advertising.</p>
+    <p>FinTrack's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    <p>Access can be revoked at any time from <a href="https://myaccount.google.com/permissions">Google Account third-party access</a>. Contact the developer via <a href="https://github.com/mdmd91xh32">GitHub</a>.</p>
+  </section>
+</main>
+</body>
+</html>
